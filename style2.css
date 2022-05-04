@@ -1,0 +1,115 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: "Righteous", cursive;
+    color: #000;
+  }
+  
+  body {
+    background-color: gray;
+  }
+  
+  /*
+    Calculator styles
+  */
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .calculator {
+    background-color: #FFD9F3;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 30px 20px;
+  }
+  
+  .calculator__display--bare {
+    /*display: none;*/
+    display: none; 
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 25px 15px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+  
+  .calculator__display--bare > span {
+    display: inline-block;
+    text-align: center;
+    background-color: #FFD3E6;
+    margin: 5px;
+    width: 40px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 5px;
+  }
+  
+  .calculator__display--for-advanced {
+    /*display: none;*/
+ 
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: end;
+    vertical-align: middle;
+    padding: 25px 15px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+  
+  .calculator__buttons {
+    background-color: #ffffff;
+    width: 100%;
+    height: 330px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .button__row {
+    height: 50px;
+    margin: 10px;
+    /*background-color: #fcf0f4;*/
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .button__row > button {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    background-color: #FFD0CA;/*요게 버튼색 (ac,숫자,decimal,=까지*/
+    flex : 1;
+  }
+  
+  .button__row > .operator {
+    color: #91AED9;
+    background-color: #FFE583;
+  }
+ 
+  .button__row > .clear_enter {
+    color: #006C58;
+    background-color: #F9F871;
+  } 
+
+  .button__row > .isPressed {
+    background-color: #00da75;
+  }
